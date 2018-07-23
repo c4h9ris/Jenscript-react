@@ -1,0 +1,144 @@
+.landing-cta {
+    position: relative;
+    margin-top: 75px;
+    max-width: 730px;
+    left: 50%;
+    margin-left: -365px;
+  h1 {
+    font-size: 48px;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 100;
+  }
+  .btn-primary {
+    margin-top: 50px;
+    font-size: 22px;
+    padding: 10px 44px;
+  }
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 100vh;
+    width: auto;
+    top: 0;
+    left: -100%;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    max-width: 100%;
+    position: absolute;
+    z-index: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.home-page {
+    .video-container {
+        height: 100vh;
+    }
+}
+
+.about-page {
+    .nav {
+        h1, h2, a {
+            color: #fff!important;
+        }
+    }
+    .landing-cta {
+        h1 {
+            font-size: 112px;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+    }
+}
+
+.portfolio-page {
+    .landing-cta {
+        h1 {
+            font-size: 112px;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .home-page {
+        .poster {
+            display: block!important;
+        }
+        .landing-cta {
+            max-width: 100%;
+            left: 0;
+            margin-left: 0;
+            margin-top: 30px;
+            h1 {
+                font-size: 36px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+        }
+        .contact {
+            padding: 100px 0;
+        }
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .home-page {
+        .poster {
+            display: block!important;
+        }
+        video {
+            display: none;
+        }
+    }
+}
